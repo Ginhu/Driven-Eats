@@ -131,12 +131,12 @@ function cancelar() {
 function mensagem(){
     const mensagemString = encodeURIComponent(`
 Olá, gostaria de fazer o pedido:\n
-- Prato: ${pratoN}
-- Bebida: ${bebidaN}
-- Sobremesa: ${sobremesaN}
+- Prato: ${pratoN}\n
+- Bebida: ${bebidaN}\n
+- Sobremesa: ${sobremesaN}\n
 Total: ${valorTotalString1}
 `);
-const link = `https://wa.me/5511932584134?text=${mensagemString}`;
+const link = `https://wa.me/5511999999999?text=${mensagemString}`;
 
 document.querySelector('.confirme-pedido a').setAttribute('href', link);
 console.log(link);
