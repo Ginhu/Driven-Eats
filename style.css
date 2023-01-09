@@ -213,3 +213,103 @@ footer {
     display: none;
     visibility: hidden;
 }
+
+.total {
+    background-size: cover;
+    position: relative;
+}
+.opacidade {
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.confirme-pedido {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 377px;
+    height: 353px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: #50d074;
+    border-radius: 9px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+}
+
+.confirme-div {
+    display: flex;
+    justify-content: space-between;
+    width: 326px;
+    padding: 0  25px;
+}
+
+.confirme-topo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #ffffff;
+    letter-spacing: 0.018em;
+}
+
+.confirme-p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #ffffff;
+    letter-spacing: 0.018em;
+}
+
+.total {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #ffffff;
+    letter-spacing: 0.018em;   
+}
+
+.confirme-pedido a {
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #50d074;
+    border-radius: 100px;
+    width: 329px;
+    height: 52px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.cancelar {
+    background-color: #50d074;
+    border: 0;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #ffffff;
+    letter-spacing: 0.018em; 
+    width: 329px;
+    height: 52px;
+}
+
+.cancelar:hover {
+    cursor: pointer;
+}
