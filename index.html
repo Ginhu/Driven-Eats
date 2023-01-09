@@ -26,7 +26,10 @@
                     <div class="prato-texto">
                         <p class="nome-prato">Carne Yin Yang</p>
                         <p class="descritivo">Um pouco de batata, um pouco de salada</p>
+                    <div class="check">
                         <p class="preco">R$ 14,90</p>
+                        <ion-icon class="ion-icon check-invisivel" name="checkmark-circle"></ion-icon>
+                    </div>
                     </div>
                 </div>
 
@@ -35,7 +38,10 @@
                     <div class="prato-texto">
                         <p class="nome-prato">Frango Yin Yang</p>
                         <p class="descritivo">Um pouco de batata, um pouco de salada</p>
-                        <p class="preco">R$ 15,90</p>
+                        <div class="check">
+                            <p class="preco">R$ 14,90</p>
+                            <ion-icon class="ion-icon check-invisivel" name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
                 </div>
 
@@ -44,7 +50,10 @@
                     <div class="prato-texto">
                         <p class="nome-prato">Peixe Yin Yang</p>
                         <p class="descritivo">Um pouco de batata, um pouco de salada</p>
-                        <p class="preco">R$ 16,90</p>
+                        <div class="check">
+                            <p class="preco">R$ 14,90</p>
+                            <ion-icon class="ion-icon check-invisivel" name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
                 </div>                
 
@@ -58,7 +67,10 @@
                     <div class="prato-texto">
                         <p class="nome-prato">Coquinha gelada</p>
                         <p class="descritivo">Lata 350ml</p>
-                        <p class="preco">R$ 4,90</p>
+                        <div class="check">
+                            <p class="preco">R$ 14,90</p>
+                            <ion-icon class="ion-icon check-invisivel" name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
                 </div>
 
@@ -67,7 +79,10 @@
                     <div class="prato-texto">
                         <p class="nome-prato">Guaraná gelada</p>
                         <p class="descritivo">Lata 350ml</p>
-                        <p class="preco">R$ 5,90</p>
+                        <div class="check">
+                            <p class="preco">R$ 14,90</p>
+                            <ion-icon class="ion-icon check-invisivel" name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
                 </div>
                 <div onclick="selecionarBebida('.bebida-Sprite')" class="prato-detalhe bebida-Sprite">
@@ -75,7 +90,10 @@
                     <div class="prato-texto">
                         <p class="nome-prato">Sprite gelada</p>
                         <p class="descritivo">Lata 350ml</p>
-                        <p class="preco">R$ 6,90</p>
+                        <div class="check">
+                            <p class="preco">R$ 14,90</p>
+                            <ion-icon class="ion-icon check-invisivel" name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -88,7 +106,10 @@
                     <div class="prato-texto">
                         <p class="nome-prato">Pudim</p>
                         <p class="descritivo">Apenas Pudim</p>
-                        <p class="preco">R$ 7,90</p>
+                        <div class="check">
+                            <p class="preco">R$ 14,90</p>
+                            <ion-icon class="ion-icon check-invisivel" name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
                 </div>
 
@@ -97,7 +118,10 @@
                     <div class="prato-texto">
                         <p class="nome-prato">Gelatina</p>
                         <p class="descritivo">Gelatina de Frutas</p>
-                        <p class="preco">R$ 8,90</p>
+                        <div class="check">
+                            <p class="preco">R$ 14,90</p>
+                            <ion-icon class="ion-icon check-invisivel" name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
                 </div>
 
@@ -106,7 +130,10 @@
                     <div class="prato-texto">
                         <p class="nome-prato">Bolo</p>
                         <p class="descritivo">Bolo de Chocolate</p>
-                        <p class="preco">R$ 9,90</p>
+                        <div class="check">
+                            <p class="preco">R$ 14,90</p>
+                            <ion-icon class="ion-icon check-invisivel" name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
                 </div>
 
@@ -117,11 +144,9 @@
     </main>
 
     <footer>
-        <div class="rodape">
-            <span class="primeiro-span">Selecione os 3 itens</span>
-            <span>para fechar o pedido</span>
-        </div>
+            <button onclick="finalizarPedido()" class="rodape" disabled>Selecione os 3 itens para fechar o pedido</button>
     </footer>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
