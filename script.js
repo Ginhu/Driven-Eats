@@ -141,7 +141,3 @@ const link = `https://wa.me/5511932584134?text=${mensagemString}`;
 document.querySelector('.confirme-pedido a').setAttribute('href', link);
 console.log(link);
 }
-
-document.querySelector('.confirme-pedido .confirmar').addEventListener('click', ()=>{
-    mensagem();
-});
