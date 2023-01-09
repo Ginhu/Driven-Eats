@@ -12,7 +12,7 @@
 <body>
     <div class="total">
         <div class="overlay"></div>
-        <div class="confirme-pedido check-invisivel">
+        <div class="confirme-pedido check-invisivel" data-test="confirm-order-modal">
             <p class="confirme-topo">Confirme seu pedido</p>
             <div class="confirme-div">
                 <p class="confirme-p nome-p">Nome do prato</p>
@@ -30,8 +30,8 @@
                 <p class="total">Total</p>
                 <p class="total valor-t">Valor do total</p>
             </div>
-            <a href="https://wa.me/5511932584134?text=Olá,%20gostaria%20de%20fazer%20o%20pedido%20-%20Prato:%20" target="_blank">Tudo certo, pode pedir!</a>
-            <button class="cancelar" onclick="cancelar()">Cancelar</button>
+            <a href="https://wa.me/5511932584134?text=Olá,%20gostaria%20de%20fazer%20o%20pedido%20-%20Prato:%20" target="_blank" data-test="confirm-order-btn">Tudo certo, pode pedir!</a>
+            <button class="cancelar" onclick="cancelar()" data-test="cancel-order-btn">Cancelar</button>
         </div>
 
     <header>

@@ -187,9 +187,7 @@ footer {
   font-size: 20px;
   line-height: 23px;
   color: #ffffff;
-  display: flex;
   text-align: center;
-  align-items: center;
 }
 
 /* .rodape button {
@@ -304,7 +302,6 @@ footer {
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
-    color: #ffffff;
     letter-spacing: 0.018em; 
     width: 329px;
     height: 52px;
