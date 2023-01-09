@@ -1,13 +1,4 @@
-let div;
-let div1;
-let div2;
-let pratoN;
-let pratoValor;
-let bebidaN;
-let valorBebida;
-let sobremesaN;
-let valorSobremesa;
-let valorTotal;
+let div, div1, div2, pratoN, pratoValor, bebidaN, valorBebida, sobremesaN, valorSobremesa, valorTotal, valorTotalString1;
 
 function selecionarPrato (prato) {
     const anterior = document.querySelector('.prato-selecionado');
@@ -126,7 +117,7 @@ function finalizarPedido() {
 
     valorTotal = ((pratoValor+valorBebida+valorSobremesa).toFixed(2));
     const valorTotalString = new String(valorTotal);
-    const valorTotalString1 = valorTotalString.replace(".", ",");
+    valorTotalString1 = valorTotalString.replace(".", ",");
     console.log(valorTotalString);
     document.querySelector('.valor-t').innerHTML = `R$ ${valorTotalString1}`;
     
@@ -137,3 +128,20 @@ function cancelar() {
     document.querySelector('.confirme-pedido').classList.add('check-invisivel');
 }
 
+function mensagem(){
+    const mensagemString = encodeURIComponent(`
+Olá, gostaria de fazer o pedido:\n
+- Prato: ${pratoN}
+- Bebida: ${bebidaN}
+- Sobremesa: ${sobremesaN}
+Total: ${valorTotalString1}
+`);
+const link = `https://wa.me/5511932584134?text=${mensagemString}`;
+
+document.querySelector('.confirme-pedido a').setAttribute('href', link);
+console.log(link);
+}
+
+document.querySelector('.confirme-pedido .confirmar').addEventListener('click', ()=>{
+    mensagem();
+});

@@ -277,7 +277,7 @@ footer {
     letter-spacing: 0.018em;   
 }
 
-.confirme-pedido a {
+.confirme-pedido .confirmar {
     display: flex;
     /* text-align: center; */
     justify-content: center;
@@ -292,6 +292,7 @@ footer {
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
+    border: none;
 }
 
 .cancelar {
@@ -310,3 +311,4 @@ footer {
 .cancelar:hover {
     cursor: pointer;
 }
+
